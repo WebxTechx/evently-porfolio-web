@@ -7,7 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet'
-import { Separator } from "@/components/ui/separator"
+import { Separator } from '@/components/ui/separator'
 
 import Image from 'next/image'
 import Navitems from './Navitems'
@@ -22,20 +22,22 @@ const MobileNav = () => {
             alt="Hamburger"
             width={24}
             height={24}
-            className='cursor-pointer'
+            className="cursor-pointer"
           />
         </SheetTrigger>
-        <SheetContent className='flex-col gap-6 bg-white md:hidden'>
-            <div className='mb-5'>
-                <Image 
-                    src='/assets/images/logo.svg'
-                    alt='logo'
-                    width={128}
-                    height={38}
-                />
-            </div>
-            <Separator className='border border-gray-50' />
+        <SheetContent className="flex-col gap-6 bg-white md:hidden">
+          <div className="mb-5">
+            <Image
+              src="/assets/images/logo.svg"
+              alt="logo"
+              width={128}
+              height={38}
+            />
+          </div>
+          <Separator className="border border-gray-50" />
+          <div className='mt-5'>
             <Navitems />
+          </div>
         </SheetContent>
       </Sheet>
     </nav>
